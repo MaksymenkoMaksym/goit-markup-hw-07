@@ -707,6 +707,10 @@ main {
     color: #2196F3;
 }
 
+.sign-up-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .sign-up-input:focus {
     color: var(--accent-color);
 }
