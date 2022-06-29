@@ -1108,7 +1108,6 @@ main {
     border-radius: 2px;
 
     margin-right: 7px;
-    animation: zoom 250ms var(--timing-function) 50ms 1 alternate;
 }
 
 .input-checkbox:checked+.icon {
