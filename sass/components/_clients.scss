@@ -7,10 +7,12 @@
   }
 }
 
-.clients__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.clients-list {
+  @include flex-position-gap(center, 30px);
+}
+
+.clients-list__link {
+  @include dispay-vertical-horizontal-gap(flex, center, center, null);
   width: 170px;
   height: 92px;
 
