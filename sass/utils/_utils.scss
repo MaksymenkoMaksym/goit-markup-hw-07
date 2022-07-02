@@ -53,10 +53,6 @@
   text-transform: uppercase;
 }
 
-.card {
-  @include flex-position-gap(center, 30px);
-}
-
 .link {
   position: relative;
 

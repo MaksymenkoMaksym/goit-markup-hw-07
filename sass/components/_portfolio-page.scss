@@ -3,8 +3,12 @@
   padding-bottom: 94px;
 }
 
-.portfolio__item {
-  @include flex_item_width(3, 30px);
+.product {
+  @include flex-position-gap(center, 30px);
+
+  &__item {
+    @include flex_item_width(3, 30px);
+  }
 }
 
 /*-------------- PAGE FILTER--------- */
@@ -14,12 +18,12 @@
   margin-bottom: 50px;
 }
 /*---------- PAGE FILTER-------------- */
-.card__img {
+.product__img {
   position: relative;
   overflow: hidden;
 }
 
-.card__tooltip {
+.product__tooltip {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,19 +42,19 @@
   /* animation */
   @include transition-two(opacity, transform, 250ms, null);
 
-  .card__link:hover &,
-  .card__link:focus & {
+  .product__link:hover &,
+  .product__link:focus & {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
-.card__block {
+.product__block {
   padding: 20px 24px;
   border: 1px solid var(--card-border-color);
 }
 
-.card__link {
+.product__link {
   color: var(--main-text-color);
   @include transition(box-shadow, 250ms, null);
 
@@ -63,7 +67,7 @@
 }
 
 // Text
-.card {
+.product {
   &__subtitle {
     margin-bottom: 4px;
     @include font(null, 18, 36, 0.06, null);

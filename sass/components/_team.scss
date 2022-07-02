@@ -4,7 +4,15 @@
   padding-bottom: 94px;
   text-align: center;
 
-  background-color: var(--background-color-gray);
+  background-color: var(--bg-color-gray);
+
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.team-list {
+  @include flex-position-gap(center, 30px);
 
   &__item {
     @include flex_item_width(4, 30px);
@@ -15,16 +23,14 @@
     box-shadow: var(--box-shadow-team);
   }
 
-  &__text-box {
+  &__box {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 }
+
 // Team text
-.team {
-  &__title {
-    margin-bottom: 50px;
-  }
+.team-list {
   &__subtitle {
     margin-bottom: 10px;
     @include font(500, 16, 19, null, null);
